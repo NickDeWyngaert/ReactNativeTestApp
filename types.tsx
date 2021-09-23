@@ -29,6 +29,7 @@ export type RootTabParamList = {
   Gps: undefined;
   Rotationvector: undefined;
   Accelerometer: undefined;
+  Translate: undefined;
 };
 
 export type RootTabScreenProps<Screen extends keyof RootTabParamList> =

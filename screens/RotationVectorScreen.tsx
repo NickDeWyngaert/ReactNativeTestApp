@@ -3,8 +3,6 @@ import * as React from "react";
 import { StyleSheet, View, Text, SafeAreaView } from "react-native";
 import { RootTabScreenProps } from "../types";
 
-interface Props {}
-
 export interface MotionObject {
   acceleration: {
     x: number;

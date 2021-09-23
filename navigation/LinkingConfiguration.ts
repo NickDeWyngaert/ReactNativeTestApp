@@ -22,12 +22,17 @@ const linking: LinkingOptions<RootStackParamList> = {
           },
           Rotationvector: {
             screens: {
-              RotationvectorScreen: "Rotationvector",
+              RotationvectorScreen: "rotationvector",
             },
           },
           Accelerometer: {
             screens: {
               AccelerometerScreen: "accelerometer",
+            },
+          },
+          Translate: {
+            screens: {
+              TranslateScreen: "translate",
             },
           },
         },

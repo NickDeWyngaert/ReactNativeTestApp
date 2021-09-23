@@ -23,6 +23,7 @@ import NotFoundScreen from "../screens/NotFoundScreen";
 import RotationVectorScreen from "../screens/RotationVectorScreen";
 import TabOneScreen from "../screens/TabOneScreen";
 import TabTwoScreen from "../screens/TabTwoScreen";
+import TranslateScreen from "../screens/TranslateScreen";
 import {
   RootStackParamList,
   RootTabParamList,
@@ -108,6 +109,14 @@ function BottomTabNavigator() {
         component={AccelerometerScreen}
         options={{
           title: "Accelerometer",
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Translate"
+        component={TranslateScreen}
+        options={{
+          title: "Translate",
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
