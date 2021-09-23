@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Accelerometer, ThreeAxisMeasurement } from "expo-sensors";
+import { RootTabScreenProps } from "../types";
 
-export default function AccelerometerScreen() {
+export default function AccelerometerScreen({
+  navigation,
+}: RootTabScreenProps<"Accelerometer">) {
   const [data, setData] = useState({
     x: 0,
     y: 0,

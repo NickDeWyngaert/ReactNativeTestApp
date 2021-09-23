@@ -3,6 +3,7 @@ import { Platform, Text, View, StyleSheet } from "react-native";
 import Constants from "expo-constants";
 import * as Location from "expo-location";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { RootTabScreenProps } from "../types";
 
 interface Props {}
 
@@ -19,7 +20,7 @@ export declare type LocationObject = {
   timestamp: number;
 };
 
-export default function GpsScreen(props: Props) {
+export default function GpsScreen({ navigation }: RootTabScreenProps<"Gps">) {
   const [location, setLocation] = useState<LocationObject | null>(null);
   const [errorMsg, setErrorMsg] = useState<String | null>(null);
 

@@ -1,6 +1,7 @@
 import { useDeviceMotion } from "@use-expo/sensors";
 import * as React from "react";
 import { StyleSheet, View, Text, SafeAreaView } from "react-native";
+import { RootTabScreenProps } from "../types";
 
 interface Props {}
 
@@ -28,7 +29,9 @@ export interface MotionObject {
   };
 }
 
-export default function RotationVectorScreen(props: Props) {
+export default function RotationVectorScreen({
+  navigation,
+}: RootTabScreenProps<"Rotationvector">) {
   const [data, available] = useDeviceMotion({ interval: 100 });
   return (
     <SafeAreaView style={styles.container}>
