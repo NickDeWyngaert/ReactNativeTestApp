@@ -64,14 +64,30 @@ export default function GpsScreen(props: Props) {
     <SafeAreaView style={styles.container}>
       {object && done ? (
         <View style={styles.container}>
-          <Text>
+          <Text style={styles.paragraph}>
             {timestampToNormal((object as LocationObject).timestamp as number)}
           </Text>
-          <Text>
-            Latitude: {(object as LocationObject).coords.latitude.toString()}
+          <Text style={styles.paragraph}>
+            Latitude: {(object as LocationObject).coords.latitude}
           </Text>
-          <Text>
-            Longitude: {(object as LocationObject).coords.longitude.toString()}
+          <Text style={styles.paragraph}>
+            Longitude: {(object as LocationObject).coords.longitude}
+          </Text>
+          <Text style={styles.paragraph}>
+            Altitude: {(object as LocationObject).coords.altitude}
+          </Text>
+          <Text style={styles.paragraph}>
+            Accuracy: {(object as LocationObject).coords.accuracy}
+          </Text>
+          <Text style={styles.paragraph}>
+            AltitudeAccuracy:
+            {(object as LocationObject).coords.altitudeAccuracy}
+          </Text>
+          <Text style={styles.paragraph}>
+            Heading: {(object as LocationObject).coords.heading}
+          </Text>
+          <Text style={styles.paragraph}>
+            Speed: {(object as LocationObject).coords.speed}
           </Text>
         </View>
       ) : (
