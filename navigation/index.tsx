@@ -21,8 +21,6 @@ import GpsScreen from "../screens/GpsScreen";
 import ModalScreen from "../screens/ModalScreen";
 import NotFoundScreen from "../screens/NotFoundScreen";
 import RotationVectorScreen from "../screens/RotationVectorScreen";
-import TabOneScreen from "../screens/TabOneScreen";
-import TabTwoScreen from "../screens/TabTwoScreen";
 import TranslateScreen from "../screens/TranslateScreen";
 import {
   RootStackParamList,
