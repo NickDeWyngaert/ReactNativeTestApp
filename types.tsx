@@ -30,6 +30,7 @@ export type RootTabParamList = {
   Rotationvector: undefined;
   Accelerometer: undefined;
   Translate: undefined;
+  Calendar: undefined;
 };
 
 export type RootTabScreenProps<Screen extends keyof RootTabParamList> =

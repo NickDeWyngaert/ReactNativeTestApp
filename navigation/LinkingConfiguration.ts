@@ -35,6 +35,11 @@ const linking: LinkingOptions<RootStackParamList> = {
               TranslateScreen: "translate",
             },
           },
+          Calendar: {
+            screens: {
+              CalendarScreen: "calendar",
+            },
+          },
         },
       },
       Modal: "modal",

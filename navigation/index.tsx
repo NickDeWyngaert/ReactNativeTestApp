@@ -17,6 +17,7 @@ import { ColorSchemeName, Pressable } from "react-native";
 import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
 import AccelerometerScreen from "../screens/AccelerometerScreen";
+import CalendarScreen from "../screens/CalendarScreen";
 import GpsScreen from "../screens/GpsScreen";
 import ModalScreen from "../screens/ModalScreen";
 import NotFoundScreen from "../screens/NotFoundScreen";
@@ -116,6 +117,16 @@ function BottomTabNavigator() {
         options={{
           title: "Translate",
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Calendar"
+        component={CalendarScreen}
+        options={{
+          title: "Calendar",
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="calendar" color={color} />
+          ),
         }}
       />
     </BottomTab.Navigator>
