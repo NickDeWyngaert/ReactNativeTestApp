@@ -82,7 +82,7 @@ function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="Gps"
+      initialRouteName="Calendar"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}
